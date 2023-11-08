@@ -1,13 +1,53 @@
-# Challenge React.js ![](https://pasteboard.co/byC31Sq5OMgz.png)
+# Douglas Dorigo React Challenge
 
-1. Create a branch into this public repository, with your name and lastname, and push it to the repo [https://github.com/sebasworkana/react-challenge.git](https://github.com/sebasworkana/react-challenge.git) . Complete challenge and create a PR so that we can review and approve
-2. The main challenge is that you create a Page with the following Style and format.
-![alt text](https://imageupload.io/en/jfSVositjWovwnf)
+## How to run
 
-1. You need to enumerate all Periodic table of the elements on CSS class and make use of it, matching words in First name and last name "Highlighting" them as in the image.
-2. First, install "react-redux", then use the useDispatch and useSelector react-redux hooks in the components.
-3. For this challenge use redux-thunk in it. Moreover, use the react-redux hooks to give a better impression and avoid older techniques. Share data among components without using props.
-4. Is mandatory to use linter like ESLINT
-5. Create npm scripts to run project and make sure to create a readme with instructions to run project
-6. Will be valuable if you can create Docker compose file to run all environment
-7. Use github pages to host web app and test
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+
+## Project Structure
+
+### store
+
+I created a store folder to handle the redux config and expose some hooks. For every domain I would create a new slice. Here I hold the underlining logic and data about wich letters should be underlinde
+
+### components
+
+Here there is the core folder. This should hold abstract components shared among the app like buttons, inputs etc.. If I had a bigger app I would create more folders, like ui and layout, to hold ui and layouts components.
+
+### views
+
+Here sits all pages of the app
+
+## Dependencies
+
+### Styled Components
+
+I chose to use it, to show I know how to use it and I belive that having smaller styled components which you can combine works very good on code reuse and specially with clever naming increases readability, since you do not need to read a big chunk of scss to understand what that component does.
+
+## Contact
+
+If you have any question about the solution, please get in touch dougtech.contato@gmail.com
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
