@@ -7,21 +7,11 @@
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 
-## Project Structure
+## Notes
 
-### store
-
-I created a store folder to handle the redux config and expose some hooks. For every domain I would create a new slice. Here I hold the underlining logic and data about wich letters should be underlinde
-
-### components
-
-Here there is the core folder. This should hold abstract components shared among the app like buttons, inputs etc.. If I had a bigger app I would create more folders, like ui and layout, to hold ui and layouts components.
-
-### views
-
-Here sits all pages of the app
+During development I had doubts about how to display the elements found in the text, because a text could contain more than one element from the periodic table, so I made a method to search in order and return only the first element found.
 
 ## Dependencies
 
@@ -37,12 +27,9 @@ If you have any question about the solution, please get in touch dougtech.contat
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm lint`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
+Runs ESLint for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 
 ### `npm run build`
 
